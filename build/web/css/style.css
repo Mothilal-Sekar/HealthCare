@@ -1,0 +1,74 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.Home
+{
+	background-image: url(homebg.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+.Menu-Bar
+{
+	background-color: #fff;
+	text-align: right;
+}
+.Menu-Bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.Menu-Bar ul li
+{
+	width: 160px;
+	margin-right: 10px;
+	padding:15px;
+}
+.Menu-Bar ul li a
+{
+	text-decoration: none;
+	color: #000;
+}
+.active, .Menu-Bar ul li:hover
+{
+	background: #C0C0C0;
+	border-radius: 4px;
+}
+.Menu-Bar .fa
+{
+	margin-right: 8px;
+}
+.Sub-Menu-1
+{
+	display:none;
+}
+.Menu-Bar ul li:hover .Sub-Menu-1
+{
+	display: block;
+	position: absolute;
+	background: #C0C0C0;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.Menu-Bar ul li:hover .Sub-Menu-1 ul
+{
+	display: block;
+	margin:10px;
+}
+.Menu-Bar ul li:hover .Sub-Menu-1 ul li
+{
+	width:180px;
+	padding: 10px;
+	border-style: 1px;
+	background: transparent;
+	border-radius: 0;
+	text-align: left
+}
+.Menu-Bar ul li:hover .Sub-Menu-1 ul li a:hover
+{
+	color: #b2ff00;
+}
